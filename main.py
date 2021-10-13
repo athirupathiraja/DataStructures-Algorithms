@@ -18,7 +18,6 @@ def linearSearch(cards, query):
 def binarySearch(cards, query):
     low, high = 0, len(cards) - 1
 
-
     while low <= high:
         midpoint = (high + low) // 2
         midNumber = cards[midpoint]
@@ -26,10 +25,10 @@ def binarySearch(cards, query):
         print('lowerBound: ', low, ' upperBound: ', high, ' midpoint: ', midpoint, 'numberAtMidpoint: ', midpoint)
 
         # NOTE: cards array is in descending order:
-        if midNumber == query and cards[midpoint-1] != query:
+        if midNumber == query and cards[midpoint - 1] != query:
             print('position: ')
             return midpoint
-        elif midNumber < query or (midNumber == query and cards[midpoint-1]):
+        elif midNumber < query or (midNumber == query and cards[midpoint - 1]):
             high = midpoint - 1
         elif midNumber > query:
             low = midpoint + 1
