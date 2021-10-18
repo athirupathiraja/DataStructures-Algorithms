@@ -1,6 +1,17 @@
 import math
+from graphAlgs import printGraph
+from graphAlgs import printShortestDistance
+from graphAlgs import printBreadthFirstSearch
+from graphAlgs import printDepthFirstSearch
 
+
+from recursiveNDynamic import printLCSRecursive
+from recursiveNDynamic import printMaxProfitsRecursive
 from sorting import printBubbleSort
+from sorting import printMergeSort
+from sorting import printNotebooks
+
+
 from hashNDictionaries import HashTableWithProbing
 
 from binaryTrees import insert
@@ -11,7 +22,20 @@ import binaryTrees
 
 from linBinSearch import LinBinSearch
 
-printBubbleSort()
+
+
+# printDepthFirstSearch()
+printGraph()
+printShortestDistance()
+# printBreadthFirstSearch()
+# -------------------------------------------------------------------------------------------------
+# printLCSRecursive()
+# printMaxProfitsRecursive()
+
+# -------------------------------------------------------------------------------------------------
+# printMergeSort()
+# printBubbleSort()
+# printNotebooks()
 # -------------------------------------------------------------------------------------------------
 # HASH TABLES
 
